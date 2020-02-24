@@ -1,0 +1,35 @@
+.footer-container{
+    height: 73px;
+    background-color: #FFF;
+    padding-top: 10px;
+}
+
+.footer-inline-element{
+    opacity: 0.7;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.footer-inline-element:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.copyright-element{
+    opacity: 0.7;
+    font-size: 13px;
+}
+
+.who-we-are{
+    opacity: 0.7;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.who-we-are-name{
+    font-weight: bold;
+}
+
+.who-we-are-years{
+    font-style: oblique;
+}

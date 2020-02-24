@@ -1,0 +1,58 @@
+.house-image{
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.house-image-container{
+    
+}
+
+.property-container{
+    border-radius: 4px;
+    background-color: #FFF;
+    height: 400px;    
+    border: 1px solid var(--gray-margin);
+}
+
+.property-container:hover{
+    cursor: pointer;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.property-description-container{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.property-description-length{
+    font-size: 14px;
+    color: var(--gray-half);
+}
+
+.property-description-price{
+    margin-bottom: 0px;
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.hearth-icon{
+    color: #da2027;
+    opacity: 0.5;
+}
+
+.hearth-icon:hover{
+    transform: scale(1.1);    
+}
+
+.hearth-icon-container{
+    margin-bottom: 15px;
+    text-align: right;
+    padding-right: 15px;
+}
