@@ -1,1 +1,43 @@
-<p>contact-us works!</p>
+<div class="row contact-us-container">
+    <div class="col-12 container text-center">
+        <div class="background-white contact-us-form-container pd-50">
+            <div class="row contactanos-header-container">
+                <h3>
+                    Contáctanos
+                </h3>
+                <p class="after-send-message">Luego de enviar el mensaje, uno de nuestros agentes se pondrá en contacto con usted.</p>
+
+            </div>
+            <form action="">
+                <form action="">
+                    <div class="text-left">
+                        <label class="text-left form-contact-label" for="phoneNumber">Teléfono</label>
+                        <input  type="text" id="phoneNumber" name="phoneNumber" placeholder="Teléfono.." required>
+                    </div>
+
+                    <div class="text-left">
+                        <label class="form-contact-label" for="name">Nombre <span class="optional-text">(opcional)</span></label>
+                        <input type="text" id="name" name="name" placeholder="Nombre..">
+                    </div>
+                
+                    <div class="text-left">
+                        <label class="form-contact-label" for="motive">Motivo <span class="optional-text">(opcional)</span></label>
+                        <select id="motive" name="motive">
+                            <option value="">Seleccione un motivo..</option>
+                            <option value="sell">Venta</option>
+                            <option value="rent">Alquiler</option>
+                            <option value="restore">Restauración</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+                    <div class="text-left">
+                        <label class="form-contact-label" for="message">Mensaje <span class="optional-text">(opcional)</span></label>
+                        <textarea id="message" name="message" placeholder="Déjenos un mensaje.." class="message-area" ></textarea>
+                    </div>
+                    <input type="submit" value="Enviar">
+                  </form>
+
+            </form>
+        </div>
+    </div>
+</div>
