@@ -10,19 +10,19 @@
             </div>
                 <form action="">
                     <div class="text-left">
-                        <label class="text-left form-contact-label" for="phoneNumber">Teléfono</label>
-                        <input  type="text" id="phoneNumber" name="phoneNumber" placeholder="Teléfono.." required>
+                        <!-- <label class="text-left form-contact-label" for="phoneNumber">Teléfono</label> -->
+                        <input  type="text" id="phoneNumber" name="phoneNumber" placeholder="Teléfono (requerido)" required>
                     </div>
 
                     <div class="text-left">
-                        <label class="form-contact-label" for="name">Nombre <span class="optional-text">(opcional)</span></label>
-                        <input type="text" id="name" name="name" placeholder="Nombre..">
+                        <!-- <label class="form-contact-label" for="name">Nombre <span class="optional-text">(opcional)</span></label> -->
+                        <input type="text" id="name" name="name" placeholder="Nombre (opcional)">
                     </div>
                 
                     <div class="text-left">
-                        <label class="form-contact-label" for="motive">Motivo <span class="optional-text">(opcional)</span></label>
+                        <!-- <label class="form-contact-label" for="motive">Motivo <span class="optional-text">(opcional)</span></label> -->
                         <select id="motive" name="motive">
-                            <option value="">Seleccione un motivo..</option>
+                            <option selected value="select">Seleccione un motivo (opcional)</option>
                             <option value="sell">Venta</option>
                             <option value="rent">Alquiler</option>
                             <option value="restore">Restauración</option>
@@ -30,8 +30,8 @@
                         </select>
                     </div>
                     <div class="text-left">
-                        <label class="form-contact-label" for="message">Mensaje <span class="optional-text">(opcional)</span></label>
-                        <textarea id="message" name="message" placeholder="Déjenos un mensaje.." class="message-area" ></textarea>
+                        <!-- <label class="form-contact-label" for="message">Mensaje <span class="optional-text">(opcional)</span></label> -->
+                        <textarea id="message" name="message" placeholder="Déjenos un mensaje (opcional)" class="message-area" ></textarea>
                     </div>
                     <input type="submit" value="Enviar">
                 </form>
