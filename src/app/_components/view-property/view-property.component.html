@@ -3,17 +3,36 @@
         <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery background-white"></ngx-gallery>
        
     </div>
-    <div class="col-4 consultar-propiedad-container">
+    <div class="col-md-4 col-12 consultar-propiedad-container">
         <div class="col-12 background-white pd-25">
-            <h6 class="consultar-header">Consultar acerca de esta propiedad</h6>        
+            <p class="text-left property-for-rent-or-sale">Casa en alquiler</p>
+            <div class="row">
+                <div class="col-10">
+                    <h4 class="property-address">Bv Artigas y Avenida Rivera</h4>
+                </div>
+                <div class="col-2">
+                    <i class="far fa-heart hearth-icon"></i>
+                </div>
+                <div class="col-12">
+                    <h3 class="price-property">U$ 18.500</h3>    
+                </div>
+                <div class="col-6">
+                    <p><i class="fas fa-bed icon-addition-action info-icon-property"></i><span class="text-icon-price-box">3 dorms</span></p>
+                </div>
+                <div class="col-6">
+                    <p class="icon-price-bed-container"><i class="fas fa-bath icon-addition-action info-icon-property icon-price-bed"></i><span class="text-icon-price-box">1 baño</span></p>
+                </div>
+            </div>              
+            
             <div class="consult-form-container">
-                <form action="">
+                <h6 class="consultar-header">Consultar acerca de esta propiedad</h6> 
+                <form action="" autocomplete="off">
                     <div class="text-left">
-                        <input  type="text" id="phoneNumber" name="phoneNumber" placeholder="Teléfono.." required>
+                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Teléfono.." required class="send-consult-param">
                     </div>
 
                     <div class="text-left">
-                        <input type="text" id="name" name="name" placeholder="Nombre..">
+                        <input type="text" id="name" name="name" placeholder="Nombre.." class="send-consult-param">
                     </div>
                 
                     <div class="text-left">
@@ -30,65 +49,38 @@
     </div>
 </div>
 
-<div class="row  mt-25">
-    <div class="col-8 background-white pd-25">
+<div class="row  mt-25 mb-25">
+    <div class="col-md-8 col-12 background-white pd-25">
         <div class="row info-icon-text-super-container mt-50 mb-50">
-            <div class="col-2 info-icon-text-container">
-                <div class="row">
-                    <i class="fas fa-home icon-addition-action info-icon-property"></i>
-                </div>
-                
-                <div class="row">
-                    <p class="info-icon-text">Apto.</p>
-                </div>
-            </div>
 
-            <div class="col-2 info-icon-text-container">
+            <div class="col-4 icon-columnn-container-1">
                 <div class="row">
-                    <i class="fas fa-bed icon-addition-action info-icon-property"></i>
+                    <i class="fas fa-home icon-addition-action info-icon-property-description info-icon-property-description-1"></i>
+                    <p class="info-icon-text text-center">Aptartamento</p>
                 </div>
-                
                 <div class="row">
+                    <i class="fas fa-bed icon-addition-action info-icon-property-description info-icon-property-description-2"></i>                
                     <p class="info-icon-text">3 dorms</p>
                 </div>
             </div>
-
-            <div class="col-2 info-icon-text-container">
+            <div class="col-4 icon-columnn-container-2">
                 <div class="row">
-                    <i class="fas fa-bath icon-addition-action info-icon-property"></i>
-                </div>
-                
-                <div class="row">
+                    <i class="fas fa-bath icon-addition-action info-icon-property-description info-icon-property-description-3"></i>
                     <p class="info-icon-text">2 baños</p>
                 </div>
-            </div>
-
-            <div class="col-2 info-icon-text-container">
                 <div class="row">
-                    <i class="fas fa-chart-area icon-addition-action info-icon-property"></i>
-                </div>
-                
-                <div class="row">
+                    <i class="fas fa-chart-area icon-addition-action info-icon-property-description info-icon-property-description-4"></i>
                     <p class="info-icon-text">200 m<sup>2</sup></p>
                 </div>
             </div>
-
-            <div class="col-2 info-icon-text-container">
+            <div class="col-4 icon-columnn-container-3">
                 <div class="row">
-                    <i class="fas fa-tree icon-addition-action info-icon-property"></i>
-                </div>
-                
-                <div class="row">
+                    <i class="fas fa-tree icon-addition-action info-icon-property-description info-icon-property-description-5"></i>
                     <p class="info-icon-text">450 m<sup>2</sup></p>
                 </div>
-            </div>
-
-            <div class="col-2 info-icon-text-container">
+            
                 <div class="row">
-                    <i class="fas fa-warehouse icon-addition-action info-icon-property"></i>
-                </div>
-                
-                <div class="row">
+                    <i class="fas fa-warehouse icon-addition-action info-icon-property-description info-icon-property-description-6"></i>
                     <p class="info-icon-text">Sin garaje</p>
                 </div>
             </div>
@@ -97,29 +89,38 @@
         
         <div class="row">
             <div class="col-12">
-                <h4>Características</h4>
+                <h4 class="caracteristicas-header">Características</h4>
             </div>
             <div class="col-6">
-                <ul>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
+                <ul class="value-key-type-char-list">
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference:</span><span class="value-type-char">03B1A</span></div></li>
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Estado:</span><span class="value-type-char green-color">A Estrenar!</span></div></li>
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Piso:</span><span class="value-type-char">9</span></div></li>
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Cantidad de Pisos:</span><span class="value-type-char">10</span></div></li>
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Gastos Comunes:</span><span class="value-type-char">4500</span></div></li>
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Dormitorios:</span><span class="value-type-char">2</span></div></li>
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Motricidad:</span><span class="value-type-char green-color">Buena</span></div></li>
                 </ul>
             </div>
             <div class="col-6">
-                <ul>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
-                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Reference</span><span class="value-type-char">Xs6587</span></div></li>
+                <ul class="value-key-type-char-list">
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Tipo Propiedad:</span><span class="value-type-char">Apartamento</span></div></li>
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Zona:</span><span class="value-type-char">Centro</span></div></li>
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Disposicion:</span><span class="value-type-char">Contrafrente</span></div></li>
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Dirección:</span><span class="value-type-char">Pregúntale</span></div></li>
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Luminosidad:</span><span class="value-type-char green-color">Buena</span></div></li>
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Apartamentos por piso:</span><span class="value-type-char">1</span></div></li>
+                    <li class="value-key-type-char-list-element"><div class="value-key-type-char"><span class="key-type-char">Distancia al mar</span><span class="value-type-char">700 mts</span></div></li>
                 </ul>
+            </div>
+        </div>
+
+        <div class="row descripcion-container">
+            <div class="col-12">
+                <h4 class="descripcion-header">Descripción</h4>
+            </div>
+            <div class="col-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consequuntur, iure assumenda architecto, eum, at corporis praesentium doloremque numquam recusandae accusamus adipisci omnis! Nam ducimus numquam aut odio dolor itaque?</p>
             </div>
         </div>
     </div>

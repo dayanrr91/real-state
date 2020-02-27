@@ -1,8 +1,9 @@
 .consultar-header{
   margin-bottom: 25px;
+  text-align: left;
 }
 
-input[type=text], select, textarea {
+.send-consult-param, select, textarea {
     width: 100%;
     padding: 7px;
     border: 1px solid #ccc;
@@ -15,7 +16,7 @@ input[type=text], select, textarea {
     font-size: 12px;
   }
   
-  input[type=submit] {
+  .send-consult-property {
     background-color: #3483fa;
     color: white;
     padding: 6px 15px;
@@ -23,6 +24,7 @@ input[type=text], select, textarea {
     border-radius: 4px;
     width: 100%;
     cursor: pointer;
+    font-size: 15px;
   }
   
   input[type=submit]:hover {
@@ -77,39 +79,37 @@ input[type=text], select, textarea {
   .consult-form-container{
     border-bottom: 1px solid rgba(0,0,0,.2);
     padding-bottom: 25px;
+    margin-top: 20px;
   }
 
   .icon-addition-action{
       float: left;
       position: relative;
       top: 3px;
-  }
-
-  .info-icon-text{
-    // width: 100%;
-    position: relative;
-    // left: 2%;
-    text-align: center;
-    font-size: 14px;
-  }
-
-  .info-icon-property{
-    padding: 15px;
-    border-radius: 50%;
-    background-color: #4db7ad;
-    color: #FFF;
-    // margin-right: 100%;
-    margin-bottom: 15px;
+    }
+    
+    .info-icon-text{
+      position: relative;
+      font-size: 14px;
+      margin-left: 15px;
+      top: 16px;
+    }
+    
+    .info-icon-property{
+      padding: 7px;
+      border-radius: 50%;
+      margin-right: 10px;
+      color: #6E6E6E;
+      opacity: 0.7;
+      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+      border: 1px solid #BDBDBD;
+      background: linear-gradient(to bottom, white 0%, #dbdad9 100%);
   }
 
   .info-icon-text-container{
-    // padding-left: 7%;
     width: 100%;
     padding-left: 50px;
-  }
-
-  .info-icon-text-super-container{
-    
   }
 
   h6{
@@ -119,13 +119,163 @@ input[type=text], select, textarea {
   .value-key-type-char{
     display: inline-flex;
     justify-content: space-between;
+    width: 100%;    
+    position: relative;
+  }
+
+  .value-key-type-char::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    background: #ddd;
+    left: 0;
+    top: 20px;
+    margin: auto 0;
     width: 100%;
+    box-sizing: border-box;
+    bottom: 20px;
+  }
+
+  .caracteristicas-header{
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    padding-bottom: 10px;
+  }
+
+  .value-key-type-char-list{
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
+  .key-type-char{
+    z-index: 99;
+    background-color: #FFF;
+    padding-right: 15px;
+    opacity: 0.7;
   }
 
   .value-key-type-char-list-element{
     list-style-type: none;
+    margin-bottom: 10px;
   }
 
   .value-type-char{
-    font-weight: bold;
+    font-weight: 400;
+    z-index: 99;
+    background-color: #FFF;
+    padding-left: 15px;
+  }
+
+  .price-property{
+    font-weight: normal;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+
+  .property-for-rent-or-sale{
+    opacity: 0.7;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .hearth-icon{
+    color: #da2027;
+    opacity: 0.5;
+    margin-top: 15px;
+    font-size: 22px;
+  }
+
+  .property-address{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .icon-bed-price{
+    margin-right: 15px;
+    width: 25px;
+    font-size: 14px;
+    padding-left: 9px;
+    padding-right: 7px;
+  }
+
+  .text-icon-price-box{
+    margin-left: 10px;
+    position: relative;
+    top: 7px;
+  }
+
+  .icon-price-bed{
+    position: relative;
+    left: 3px;
+    
+  }
+
+  .icon-price-bed-container{
+    float: right;
+  }
+
+  .info-icon-property-description{
+    border-radius: 50%;
+    background-color: #4db7ad;
+    color: #FFF;
+    margin-bottom: 15px;
+    width: 45px;
+  }
+
+  .info-icon-property-description-1{
+    padding: 15px 15px 15px 14px;
+  }
+
+  .info-icon-property-description-2{
+    padding: 15px 15px 15px 13px;
+  }
+
+  .info-icon-property-description-3{
+    padding: 15px 15px 15px 14px;
+  }
+
+  .info-icon-property-description-4{
+    padding: 15px 15px 15px 14px;
+  }
+
+  .info-icon-property-description-5{
+    padding: 15px 15px 15px 17px;
+  }
+
+  .info-icon-property-description-6{
+    padding: 15px 15px 15px 12px;
+  }
+
+  .hearth-icon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .icon-columnn-container-1{
+    padding-left: 4%;
+  }
+
+  .icon-columnn-container-2{
+    padding-left: 10%;
+  }
+
+  .icon-columnn-container-3{
+    padding-left: 16%;
+  }
+
+  .green-color{
+    color: green;
+  }
+
+  .descripcion-header{
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    padding-bottom: 10px;
+  }
+
+  .descripcion-container{
+    margin-top: 50px;
   }
